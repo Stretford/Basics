@@ -16,7 +16,7 @@ typedef struct dnode
     struct dnode *pre;
 }dnode;
 
-dnode *create()
+dnode *create_DL()
 {
     dnode *head, *p, *s;
     int x, cycle = 1;
@@ -46,7 +46,7 @@ dnode *create()
     return head;
 }
 
-dnode *del(dnode *head, int num)
+dnode *del_DL(dnode *head, int num)
 {
     dnode *p1, *p2;
     p1 = head;
@@ -78,7 +78,7 @@ dnode *del(dnode *head, int num)
     return head;
 }
 
-dnode *insert(dnode *head, int num)
+dnode *insert_DL(dnode *head, int num)
 {
     dnode *p0, *p1;
     p1 = head;

@@ -16,7 +16,7 @@ typedef struct singleLink
     struct singleLink *next;
 }node;
 
-node *create()
+node *create_SL()
 {
     node *head, *p, *s;
     int x, cycle = 1;
@@ -45,7 +45,7 @@ node *create()
     
 }
 
-int length(node *head)
+int length_SL(node *head)
 {
     int n = 0;
     node *p = head;
@@ -57,10 +57,10 @@ int length(node *head)
     return n;
 }
 
-void print(node *head)
+void print_SL(node *head)
 {
     node *p;
-    int n = length(head);
+    int n = length_SL(head);
     printf("\nThe SingleLink is:\n");
     p = head;
     if(head != NULL)
@@ -72,7 +72,7 @@ void print(node *head)
     
 }
 
-node *del(node *head, int num)
+node *del_SL(node *head, int num)
 {
     node *p1, *p2;
     p1 = head;
@@ -96,7 +96,7 @@ node *del(node *head, int num)
     return head;
 }
 
-node *insert(node *head, int num)
+node *insert_SL(node *head, int num)
 {
     node *p0, *p1, *p2;
     p1 = head;
@@ -128,10 +128,10 @@ node *insert(node *head, int num)
     return head;            
 }
 
-node *sort(node * head)
+node *sort_SL(node * head)
 {
     node *p, *p2, *p3;
-    int n = length(head);
+    int n = length_SL(head);
     int temp;
     if (head == NULL || head->next == NULL)
         return head;
@@ -153,7 +153,7 @@ node *sort(node * head)
     return head;
 }
 
-node *reverse(node *head)
+node *reverse_SL(node *head)
 {
     node *p1, *p2, *p3;
     if(head == NULL || head->next == NULL)
@@ -172,7 +172,7 @@ node *reverse(node *head)
     return head;
 }
 
-node *RemoveHead(node *head)
+node *RemoveHead_SL(node *head)
 {
     node *p = head->next;
     head->next = p->next;
@@ -180,7 +180,7 @@ node *RemoveHead(node *head)
     return head;
 }
 
-node *SearchMid(node *head)
+node *SearchMid_SL(node *head)
 {
     node *temp = head;
     while(head->next !=NULL && head->next->next != NULL)
@@ -193,9 +193,9 @@ node *SearchMid(node *head)
 
 void SLTest()
 {
-    node *SL = create();
-    print(SL);
+    node *SL = create_SL();
+    print_SL(SL);
     //del(SL, 3);
     //print(SearchMid(SL));
-    printf("Mid is %d", SearchMid(SL)->data);
+    printf("Mid is %d", SearchMid_SL(SL)->data);
 }
