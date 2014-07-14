@@ -13,68 +13,63 @@ typedef struct node
 {
     int data;
     struct node *next;
-}node;
+}LinkStack, *top;
 
-typedef struct stack
+LinkStack *create_LinkStack()
 {
-    node *bottom;
-    node *top;
-}stack;
-
-stack *push_stack(stack *ST, int x)
-{
-    node *s = (node *)malloc(sizeof(node));
-    s->data = x;
-    s->next = NULL;
-    if(ST->bottom == NULL)
+    LinkStack *top = (LinkStack *)malloc(sizeof(LinkStack));
+    if(!top)
     {
-        ST->bottom = s;
-        ST->top = s;
+        printf("\nspace allocation failed!");
+        return NULL;
     }
-    else
-    {
-        node *p = ST->top;
-        s->next = p;
-        ST->top = s;
-    }
-    return ST;
+    top->next = NULL;
+    return top;
 }
 
-int pop_stack(stack *ST)
+
+void push_LinkStack(LinkStack *top, int x)
 {
-    if(ST->bottom == NULL)
+    LinkStack *s = (LinkStack *)malloc(sizeof(LinkStack));
+    if(!s)
     {
-        printf("\nThe stack is empty");
+        printf("\nspace allocation failed!");
+        return;
+    }
+    s->data = x;
+    s->next = top->next;
+    top->next = s;
+    return;
+}
+
+int IsEmpty_LinkStack(LinkStack *top)
+{
+    return (top->next == NULL ? 1 : 0);
+}
+
+int pop_stack(LinkStack *top)
+{
+    if(IsEmpty_LinkStack(top))
+    {
+        printf("\nthe stack is empty");
         return -1;
     }
-    node *p = ST->bottom;
-    if(ST->top == ST->bottom)
-    {
-        int x = ST->top->data;
-        ST->bottom = NULL;
-        ST->top = NULL;
-        return x;
-    }
-    else
-    {
-        while(p->next != ST->top)
-            p = p->next;
-        int x = p->data;
-        ST->top = p;
-        ST->top->next = NULL;
-        return x;
-    }
+    LinkStack *s = top->next;
+    int x = s->data;
+    top->next = s->next;
+    free(s);
+    return x;
 }
 
-void print_stack(stack *ST)
+void print_LinkStack(LinkStack *top)
 {
-    if(ST->bottom == NULL)
+    if(IsEmpty_LinkStack(top))
     {
         printf("\nThe stack is empty");
         return;
     }
     
-    node *t = ST->top;
+    LinkStack *t = top->next;
     printf("\nThe stack is:\n");
     while(t != NULL)
     {
@@ -85,10 +80,12 @@ void print_stack(stack *ST)
 
 void Stack_Test()
 {
-    stack *ST = (stack *)malloc(sizeof(stack));
-    push_stack(ST, 33);
-    push_stack(ST, 21);
-    push_stack(ST, 12);
-    push_stack(ST, 109);
-    print_stack(ST);
+    LinkStack *top = create_LinkStack();
+    push_LinkStack(top, 3);
+    push_LinkStack(top, 56);
+    push_LinkStack(top, 1);
+    pop_stack(top);
+    pop_stack(top);
+    push_LinkStack(top, 77);
+    print_LinkStack(top);
 }
