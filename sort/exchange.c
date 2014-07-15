@@ -21,7 +21,8 @@ void bubble_sort(int L[], int n)    //time complexity : n ** 2, stable
                 L[j + 1] = temp;
             }
         }
-        printf("\n");
+        
+        printf("\nbubble sort:");
         for(int i = 0; i < n;i++)
         {
             printf("%d,", L[i]);
@@ -56,6 +57,7 @@ void quick_sort(int L[], int left, int right)
         quick_sort(L, left, i - 1);
         quick_sort(L, i + 1, right);
     }
+
 }
 
 
@@ -63,10 +65,12 @@ void exchange_test()
 {
     int L[] = {77, 66, 55, 44, 1};
     int n = sizeof(L) / sizeof(int);
+    bubble_sort(L, n);
     quick_sort(L, 0, n - 1);
-    printf("\nafter sorting: ");
-    for(int i = 0; i < sizeof(L) / sizeof(int);i++)
+    printf("\nquick sort:");
+    for(int i = 0; i < n;i++)
     {
         printf("%d,", L[i]);
     }
+
 }

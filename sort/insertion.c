@@ -10,7 +10,7 @@
 
 void insert_sort(int L[], int n)   //time complexity : n ** 2, stable
 {
-    //int n = sizeof(L) / sizeof(int);
+    printf("\nselection sort:\n");
     int temp, j;
     for(int i = 1; i < n; i++)
     {
@@ -23,19 +23,20 @@ void insert_sort(int L[], int n)   //time complexity : n ** 2, stable
             }
             L[j + 1] = temp;
         }
+        
+        for(int i = 0; i < n;i++)
+        {
+            printf("%d,", L[i]);
+        }
+        printf("\n");
     }
-    //return;
-    printf("%d", n);
+    
+
 }
 
 void insertion_test()
 {
-    int L[] = {44, 21, 64, 77, 1};
+    int L[] = {77, 66, 55, 44, 1};
     int n = sizeof(L) / sizeof(int);
     insert_sort(L, n);
-    printf("\nafter sorting: ");
-    for(int i = 0; i < sizeof(L) / sizeof(int);i++)
-    {
-        printf("%d,", L[i]);
-    }
 }

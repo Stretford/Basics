@@ -9,12 +9,12 @@
 #include <stdio.h>
 #include <string.h>
 //#include "SingleLink.c"
-extern int exchange_test();
+extern int selection_test();
 
 int main(int argc, const char * argv[])
 {
 
-    exchange_test();
+    selection_test();
     return 0;
 }
 
