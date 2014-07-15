@@ -106,6 +106,19 @@ int Height_BiTree(BiTree bt)
     return result;
 }
 
+BiTree Search_BiTree(BiTree bt, char x)
+{
+    BiTree temp;
+    if(bt == NULL)
+        return NULL;
+    if(x == bt->data)
+        return bt;
+    temp = Search_BiTree(bt->lchild, x);
+    if(temp != NULL)
+        return temp;
+    return Search_BiTree(bt->rchild, x);
+}
+
 void BiTree_Test()
 {
     printf("please input the tree(\"#\" for null)\n");
