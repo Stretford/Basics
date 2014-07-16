@@ -8,7 +8,7 @@
 
 #include <stdio.h>
 
-void bubble_sort(int L[], int n)    //time complexity : n ** 2, stable
+void bubble_sort(int L[], int n)    //time complexity: n ** 2, stable
 {
     for(int i = 0; i < n; i++)
     {
@@ -30,7 +30,7 @@ void bubble_sort(int L[], int n)    //time complexity : n ** 2, stable
     }
 }
 
-void quick_sort(int L[], int left, int right)
+void quick_sort(int L[], int left, int right)   //time complexity: nlog2n, unstable
 {
     int temp, i = left, j = right;
     if(left < right)

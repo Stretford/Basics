@@ -47,7 +47,7 @@ int IsEmpty_LinkStack(LinkStack *top)
     return (top->next == NULL ? 1 : 0);
 }
 
-int pop_stack(LinkStack *top)
+int pop_LinkStack(LinkStack *top)
 {
     if(IsEmpty_LinkStack(top))
     {
@@ -84,8 +84,8 @@ void Stack_Test()
     push_LinkStack(top, 3);
     push_LinkStack(top, 56);
     push_LinkStack(top, 1);
-    pop_stack(top);
-    pop_stack(top);
+    pop_LinkStack(top);
+    pop_LinkStack(top);
     push_LinkStack(top, 77);
     print_LinkStack(top);
 }

@@ -121,7 +121,7 @@ BiTree Search_BiTree(BiTree bt, char x)
 
 void BiTree_Test()
 {
-    printf("please input the tree(\"#\" for null)\n");
+    printf("please input the BiTree(\"#\" for null)\n");
     BiTree T;
     create_BiTree(&T);
     printf("\ntree created");
