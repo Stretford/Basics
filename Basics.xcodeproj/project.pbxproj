@@ -19,6 +19,7 @@
 		05C5EE051957D47A003A8464 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 05C5EE041957D47A003A8464 /* main.c */; };
 		05C5EE071957D47A003A8464 /* Basics.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05C5EE061957D47A003A8464 /* Basics.1 */; };
 		05DBB0E51976C9C30017D4C7 /* BiSearchTree.c in Sources */ = {isa = PBXBuildFile; fileRef = 05DBB0E41976C9C30017D4C7 /* BiSearchTree.c */; };
+		1D201764197EA678002A6EF9 /* Questions.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D201763197EA678002A6EF9 /* Questions.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,6 +49,7 @@
 		05C5EE041957D47A003A8464 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		05C5EE061957D47A003A8464 /* Basics.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Basics.1; sourceTree = "<group>"; };
 		05DBB0E41976C9C30017D4C7 /* BiSearchTree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = BiSearchTree.c; path = tree/BiSearchTree.c; sourceTree = "<group>"; };
+		1D201763197EA678002A6EF9 /* Questions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Questions.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				054D447F19723445007AF41F /* Queue.c */,
 				054D44811972680B007AF41F /* Stack.c */,
 				053EBDC6197CF9C000706420 /* Graph.c */,
+				1D201763197EA678002A6EF9 /* Questions.c */,
 			);
 			path = Basics;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				053EBDC7197CF9C000706420 /* Graph.c in Sources */,
 				0533E08A1975365400F30445 /* selection.c in Sources */,
 				054D44821972680B007AF41F /* Stack.c in Sources */,
+				1D201764197EA678002A6EF9 /* Questions.c in Sources */,
 				050BED3419769C32000A494E /* BiTree.c in Sources */,
 				055ECCCD195FFCD2002984F6 /* DoubleLink.c in Sources */,
 				05DBB0E51976C9C30017D4C7 /* BiSearchTree.c in Sources */,

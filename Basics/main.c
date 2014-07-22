@@ -10,11 +10,11 @@
 #include <string.h>
 //#include "SingleLink.c"
 extern int BiTree_Test();
+extern void test();
 
 int main(int argc, const char * argv[])
 {
-
-    BiTree_Test();
+    test();
     return 0;
 }
 
