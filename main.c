@@ -9,12 +9,12 @@
 #include <stdio.h>
 #include <string.h>
 //#include "SingleLink.c"
-extern int BSTree_Test();
+extern int BiTree_Test();
 
 int main(int argc, const char * argv[])
 {
 
-    BSTree_Test();
+    BiTree_Test();
     return 0;
 }
 

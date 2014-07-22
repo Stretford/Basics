@@ -67,6 +67,39 @@ void PostOrderTraverse(BiTree bt)
     }
 }
 
+#define BiTree_Max_Size 50
+void LevelOrderTraverse(BiTree bt)
+{
+    BiTree queue[BiTree_Max_Size];  //sequence queue
+    int front = 0, rear = 0;
+    if(bt == NULL)
+        return;
+    queue[rear] = bt;
+    rear++;
+    while(rear != front)
+    {
+        printf("-%c", queue[front]->data);
+        if(queue[front] ->lchild !=NULL)
+        {
+            queue[rear] = queue[front]->lchild;
+            rear++;
+        }
+        if(queue[front]->lchild != NULL)
+        {
+            queue[rear] = queue[front]->rchild;
+            rear++;
+        }
+        front++;
+        printf("\nqueue is:");
+        //int n = sizeof(queue) / sizeof(int);
+        for(int i = 0; i < BiTree_Max_Size; i++)
+        {
+            if(queue[i] != NULL && queue[i]->data)
+                printf("%c->", queue[i]->data);
+        }
+    }
+}
+
 int NodeNum_BiTree(BiTree bt)
 {
     int n = 0;
@@ -124,8 +157,8 @@ void BiTree_Test()
     printf("please input the BiTree(\"#\" for null)\n");
     BiTree T;
     create_BiTree(&T);
-    printf("\ntree created");
-    PostOrderTraverse(T);
-    printf("\nthe height is:%d", Height_BiTree(T));
+    printf("\ntree created\n");
+    LevelOrderTraverse(T);
+    //printf("\nthe height is:%d", Height_BiTree(T));
 }
 
