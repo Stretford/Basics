@@ -7,8 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050BED3419769C32000A494E /* BiTree.c in Sources */ = {isa = PBXBuildFile; fileRef = 050BED3319769C32000A494E /* BiTree.c */; };
+		0533E0881975365400F30445 /* exchange.c in Sources */ = {isa = PBXBuildFile; fileRef = 0533E0851975365400F30445 /* exchange.c */; };
+		0533E0891975365400F30445 /* insertion.c in Sources */ = {isa = PBXBuildFile; fileRef = 0533E0861975365400F30445 /* insertion.c */; };
+		0533E08A1975365400F30445 /* selection.c in Sources */ = {isa = PBXBuildFile; fileRef = 0533E0871975365400F30445 /* selection.c */; };
+		053EBDC7197CF9C000706420 /* Graph.c in Sources */ = {isa = PBXBuildFile; fileRef = 053EBDC6197CF9C000706420 /* Graph.c */; };
+		054B97761959B09300FA7D1E /* SingleLink.c in Sources */ = {isa = PBXBuildFile; fileRef = 054B97751959B09300FA7D1E /* SingleLink.c */; };
+		054D448019723445007AF41F /* Queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 054D447F19723445007AF41F /* Queue.c */; };
+		054D44821972680B007AF41F /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 054D44811972680B007AF41F /* Stack.c */; };
+		055ECCCD195FFCD2002984F6 /* DoubleLink.c in Sources */ = {isa = PBXBuildFile; fileRef = 055ECCCC195FFCD2002984F6 /* DoubleLink.c */; };
 		05C5EE051957D47A003A8464 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 05C5EE041957D47A003A8464 /* main.c */; };
 		05C5EE071957D47A003A8464 /* Basics.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05C5EE061957D47A003A8464 /* Basics.1 */; };
+		05DBB0E51976C9C30017D4C7 /* BiSearchTree.c in Sources */ = {isa = PBXBuildFile; fileRef = 05DBB0E41976C9C30017D4C7 /* BiSearchTree.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,9 +35,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		050BED3319769C32000A494E /* BiTree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = BiTree.c; path = tree/BiTree.c; sourceTree = "<group>"; };
+		0533E0851975365400F30445 /* exchange.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = exchange.c; path = sorting/exchange.c; sourceTree = "<group>"; };
+		0533E0861975365400F30445 /* insertion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = insertion.c; path = sorting/insertion.c; sourceTree = "<group>"; };
+		0533E0871975365400F30445 /* selection.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = selection.c; path = sorting/selection.c; sourceTree = "<group>"; };
+		053EBDC6197CF9C000706420 /* Graph.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Graph.c; sourceTree = "<group>"; };
+		054B97751959B09300FA7D1E /* SingleLink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SingleLink.c; sourceTree = "<group>"; };
+		054D447F19723445007AF41F /* Queue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Queue.c; sourceTree = "<group>"; };
+		054D44811972680B007AF41F /* Stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Stack.c; sourceTree = "<group>"; };
+		055ECCCC195FFCD2002984F6 /* DoubleLink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DoubleLink.c; sourceTree = "<group>"; };
 		05C5EE011957D47A003A8464 /* Basics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Basics; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C5EE041957D47A003A8464 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		05C5EE061957D47A003A8464 /* Basics.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Basics.1; sourceTree = "<group>"; };
+		05DBB0E41976C9C30017D4C7 /* BiSearchTree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = BiSearchTree.c; path = tree/BiSearchTree.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +61,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		050BED3219769C27000A494E /* tree */ = {
+			isa = PBXGroup;
+			children = (
+				05DBB0E41976C9C30017D4C7 /* BiSearchTree.c */,
+				050BED3319769C32000A494E /* BiTree.c */,
+			);
+			name = tree;
+			sourceTree = "<group>";
+		};
+		0533E0781974DD9500F30445 /* sorting */ = {
+			isa = PBXGroup;
+			children = (
+				0533E0851975365400F30445 /* exchange.c */,
+				0533E0861975365400F30445 /* insertion.c */,
+				0533E0871975365400F30445 /* selection.c */,
+			);
+			name = sorting;
+			sourceTree = "<group>";
+		};
 		05C5EDF81957D47A003A8464 = {
 			isa = PBXGroup;
 			children = (
@@ -60,8 +99,15 @@
 		05C5EE031957D47A003A8464 /* Basics */ = {
 			isa = PBXGroup;
 			children = (
+				050BED3219769C27000A494E /* tree */,
+				0533E0781974DD9500F30445 /* sorting */,
 				05C5EE041957D47A003A8464 /* main.c */,
 				05C5EE061957D47A003A8464 /* Basics.1 */,
+				054B97751959B09300FA7D1E /* SingleLink.c */,
+				055ECCCC195FFCD2002984F6 /* DoubleLink.c */,
+				054D447F19723445007AF41F /* Queue.c */,
+				054D44811972680B007AF41F /* Stack.c */,
+				053EBDC6197CF9C000706420 /* Graph.c */,
 			);
 			path = Basics;
 			sourceTree = "<group>";
@@ -118,6 +164,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				05C5EE051957D47A003A8464 /* main.c in Sources */,
+				0533E0881975365400F30445 /* exchange.c in Sources */,
+				054D448019723445007AF41F /* Queue.c in Sources */,
+				054B97761959B09300FA7D1E /* SingleLink.c in Sources */,
+				053EBDC7197CF9C000706420 /* Graph.c in Sources */,
+				0533E08A1975365400F30445 /* selection.c in Sources */,
+				054D44821972680B007AF41F /* Stack.c in Sources */,
+				050BED3419769C32000A494E /* BiTree.c in Sources */,
+				055ECCCD195FFCD2002984F6 /* DoubleLink.c in Sources */,
+				05DBB0E51976C9C30017D4C7 /* BiSearchTree.c in Sources */,
+				0533E0891975365400F30445 /* insertion.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +253,12 @@
 		05C5EE0B1957D47A003A8464 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				OTHER_LDFLAGS = "-all_load";
+				"OTHER_LDFLAGS[arch=*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -204,6 +266,12 @@
 		05C5EE0C1957D47A003A8464 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				OTHER_LDFLAGS = "-all_load";
+				"OTHER_LDFLAGS[arch=*]" = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -227,6 +295,7 @@
 				05C5EE0C1957D47A003A8464 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

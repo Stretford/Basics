@@ -7,12 +7,14 @@
 //
 
 #include <stdio.h>
+#include <string.h>
+//#include "SingleLink.c"
+extern int BiTree_Test();
 
 int main(int argc, const char * argv[])
 {
 
-    // insert code here...
-    printf("Hello, World!\n");
+    BiTree_Test();
     return 0;
 }
 
