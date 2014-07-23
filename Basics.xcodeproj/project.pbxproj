@@ -20,6 +20,7 @@
 		05C5EE071957D47A003A8464 /* Basics.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05C5EE061957D47A003A8464 /* Basics.1 */; };
 		05DBB0E51976C9C30017D4C7 /* BiSearchTree.c in Sources */ = {isa = PBXBuildFile; fileRef = 05DBB0E41976C9C30017D4C7 /* BiSearchTree.c */; };
 		1D201764197EA678002A6EF9 /* Questions.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D201763197EA678002A6EF9 /* Questions.c */; };
+		1DF262EB197F8E2400BA1AB9 /* String.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DF262EA197F8E2400BA1AB9 /* String.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +51,7 @@
 		05C5EE061957D47A003A8464 /* Basics.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Basics.1; sourceTree = "<group>"; };
 		05DBB0E41976C9C30017D4C7 /* BiSearchTree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = BiSearchTree.c; path = tree/BiSearchTree.c; sourceTree = "<group>"; };
 		1D201763197EA678002A6EF9 /* Questions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 0; path = Questions.c; sourceTree = "<group>"; };
+		1DF262EA197F8E2400BA1AB9 /* String.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = String.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				054D44811972680B007AF41F /* Stack.c */,
 				053EBDC6197CF9C000706420 /* Graph.c */,
 				1D201763197EA678002A6EF9 /* Questions.c */,
+				1DF262EA197F8E2400BA1AB9 /* String.c */,
 			);
 			path = Basics;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				05C5EE051957D47A003A8464 /* main.c in Sources */,
 				0533E0881975365400F30445 /* exchange.c in Sources */,
 				054D448019723445007AF41F /* Queue.c in Sources */,
+				1DF262EB197F8E2400BA1AB9 /* String.c in Sources */,
 				054B97761959B09300FA7D1E /* SingleLink.c in Sources */,
 				053EBDC7197CF9C000706420 /* Graph.c in Sources */,
 				0533E08A1975365400F30445 /* selection.c in Sources */,
