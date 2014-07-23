@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>E849B181-6EE4-4276-B3F6-C7D51C2DFF54</string>
+	<string>11F36115-93A3-4768-A61D-E23A6C952588</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Basics</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>09A4601E-86A4-403B-9FA3-23EA04D4951D</key>
-		<string>https://github.com/Stretford/basics.git</string>
+		<key>DC1D90E6-6D53-48BA-B985-347C30AFC77E</key>
+		<string>https://github.com/Stretford/Basics.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Basics.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>09A4601E-86A4-403B-9FA3-23EA04D4951D</key>
+		<key>DC1D90E6-6D53-48BA-B985-347C30AFC77E</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Stretford/basics.git</string>
+	<string>https://github.com/Stretford/Basics.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>09A4601E-86A4-403B-9FA3-23EA04D4951D</string>
+	<string>DC1D90E6-6D53-48BA-B985-347C30AFC77E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>09A4601E-86A4-403B-9FA3-23EA04D4951D</string>
+			<string>DC1D90E6-6D53-48BA-B985-347C30AFC77E</string>
 			<key>IDESourceControlWCCName</key>
-			<string>basics</string>
+			<string>Basics</string>
 		</dict>
 	</array>
 </dict>

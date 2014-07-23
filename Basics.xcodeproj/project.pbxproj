@@ -49,7 +49,7 @@
 		05C5EE041957D47A003A8464 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		05C5EE061957D47A003A8464 /* Basics.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Basics.1; sourceTree = "<group>"; };
 		05DBB0E41976C9C30017D4C7 /* BiSearchTree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = BiSearchTree.c; path = tree/BiSearchTree.c; sourceTree = "<group>"; };
-		1D201763197EA678002A6EF9 /* Questions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Questions.c; sourceTree = "<group>"; };
+		1D201763197EA678002A6EF9 /* Questions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 0; path = Questions.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
