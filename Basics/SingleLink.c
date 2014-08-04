@@ -9,6 +9,48 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//sequence list
+#define MaxLen 100
+typedef struct sequenceList
+{
+    int data[MaxLen];
+    int length;
+}SeqList;
+
+void Init_SeqList(SeqList *L)
+{
+    L->length = 0;
+}
+
+int GetNode_SeqList(SeqList *L, int i)
+{
+    if(i < 1 || i > L->length)
+    {
+        printf("\nposition error");
+        return -1;
+    }
+    
+    return L->data[i - 1];
+}
+
+void Insert_SeqList(SeqList *L, int data, int position)
+{
+    if(position < 1 || position > L->length + 1)
+    {
+        printf("\nposition error");
+        return;
+    }
+    if(L->length == MaxLen)
+    {
+        printf("\noverflow");
+        return;
+    }
+    for(int j = L->length - 1;j >= position;j--)
+        L->data[j + 1] = L->data[j];
+    L->data[position - 1] = data;
+    L->length++;
+}
+
 
 typedef struct singleLink
 {

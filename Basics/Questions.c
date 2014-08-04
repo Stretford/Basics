@@ -72,17 +72,36 @@ int Ad_NumOf1InNumbersFrom(int n)
     return result;
 }
 
+void AA(int a)
+{
+    int base = 1;
+    for(int i = 0;i < a;i++)
+    {
+        int t = base;
+        int k = 1;
+        while(t)
+        {
+            k *= 10;
+            t--;
+        }
+        for(int j = 1;j < k; j++)
+            printf("%d,", j);
+        printf("\n");
+        base++;
+    }
+}
+
 void test()
 {
-    unsigned int m = 400000000;
+    unsigned int m = 400000;
     long start = clock();
     int a = NumOf1InNumbersFrom(m);
     long end = clock();
     printf("\n%ld\n", end - start);
-    start = clock();
+    long start1 = clock();
     int b = Ad_NumOf1InNumbersFrom(m);
-    end = clock();
-    printf("\n%ld\n", end - start);
+    long end1 = clock();
+    printf("\n%ld\n", end1 - start1);
     printf("\n%d\n", a);
     printf("\n%d", b);
 }

@@ -11,10 +11,14 @@
 //#include "SingleLink.c"
 extern int BiTree_Test();
 extern void test();
+extern void AA();
 
 int main(int argc, const char * argv[])
 {
-    test();
+    int a = 2;
+    int *p = &a;
     return 0;
 }
+
+
 
