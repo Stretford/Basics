@@ -47,6 +47,7 @@ void Insert_SeqList(SeqList *L, int data, int position)
     }
     for(int j = L->length - 1;j >= position;j--)
         L->data[j + 1] = L->data[j];
+    
     L->data[position - 1] = data;
     L->length++;
 }
