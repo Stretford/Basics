@@ -103,7 +103,7 @@ dnode *insert_DL(dnode *head, int num)
             p1->pre = p0;
         }
     }
-    else
+    else    //p1->next is NULL
     {
         p1->next = p0;
         p0->pre = p1;

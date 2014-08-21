@@ -163,7 +163,7 @@ node *insert_SL(node *head, int num)
             p0->next = p1;
         }
     }
-    else
+    else    //p1->next is NULL
     {
         p1->next = p0;
         p0->next = NULL;
