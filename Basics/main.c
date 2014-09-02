@@ -15,8 +15,10 @@ extern void AA();
 
 int main(int argc, const char * argv[])
 {
-    int a = 2;
-    int *p = &a;
+    char sizebuf[250];
+    char *p = "aassds";
+    printf("%p", p);
+    
     return 0;
 }
 

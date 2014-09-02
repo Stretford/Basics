@@ -51,6 +51,7 @@
 		05C5EE061957D47A003A8464 /* Basics.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Basics.1; sourceTree = "<group>"; };
 		05DBB0E41976C9C30017D4C7 /* BiSearchTree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = BiSearchTree.c; path = tree/BiSearchTree.c; sourceTree = "<group>"; };
 		1D201763197EA678002A6EF9 /* Questions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 0; path = Questions.c; sourceTree = "<group>"; };
+		1D57B93719B5D60000387B90 /* basics */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = basics; sourceTree = "<group>"; };
 		1DF262EA197F8E2400BA1AB9 /* String.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = String.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +115,7 @@
 				053EBDC6197CF9C000706420 /* Graph.c */,
 				1D201763197EA678002A6EF9 /* Questions.c */,
 				1DF262EA197F8E2400BA1AB9 /* String.c */,
+				1D57B93719B5D60000387B90 /* basics */,
 			);
 			path = Basics;
 			sourceTree = "<group>";
