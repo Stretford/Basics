@@ -16,3 +16,4 @@
 ·移位优先级大于逻辑运算大于异或
 ·c++中变量的4种存储类型：auto、static、register、extern
 ·malloc/free为c/c++标准库函数，new/delete为c++运算符。库函数无法让编译器动态的执行构造/析构函数
+·UNIX进程行为包括：代码段、数据段、堆栈段
