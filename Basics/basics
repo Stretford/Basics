@@ -13,3 +13,6 @@
 ·不用比较运算符比较两数大小：
 	1.(a / b) ? a : b
 	2.z = a - b, (z >> 31) & 1 ? b : a
+·移位优先级大于逻辑运算大于异或
+·c++中变量的4种存储类型：auto、static、register、extern
+·malloc/free为c/c++标准库函数，new/delete为c++运算符。库函数无法让编译器动态的执行构造/析构函数
